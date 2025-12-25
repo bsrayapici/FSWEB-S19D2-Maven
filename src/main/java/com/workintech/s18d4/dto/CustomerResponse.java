@@ -1,5 +1,8 @@
 package com.workintech.s18d4.dto;
 
+import lombok.Data;
+
+@Data
 public class CustomerResponse {
 
     private Integer id;
@@ -10,17 +13,5 @@ public class CustomerResponse {
         this.id = id;
         this.email = email;
         this.salary = salary;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public Double getSalary() {
-        return salary;
     }
 }
